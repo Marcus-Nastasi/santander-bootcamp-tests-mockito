@@ -4,12 +4,12 @@ public class Person {
 
     private final String name;
     private final String cpf;
-    private final AdressData adressData;
+    private final AddressData addressData;
 
-    public Person(String name, String cpf, AdressData adressData) {
+    public Person(String name, String cpf, AddressData addressData) {
         this.name = name;
         this.cpf = cpf;
-        this.adressData = adressData;
+        this.addressData = addressData;
     }
 
     public String getName() {
@@ -20,8 +20,8 @@ public class Person {
         return cpf;
     }
 
-    public AdressData getAdressData() {
-        return adressData;
+    public AddressData getAddressData() {
+        return addressData;
     }
 }
 
