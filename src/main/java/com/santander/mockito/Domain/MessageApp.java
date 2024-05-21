@@ -13,8 +13,8 @@ public class MessageApp {
         this.message.add(m);
     }
 
-    public void send() {
-        System.out.println(this.message);
+    public List<String> send() {
+        return this.message;
     }
 
     public void removeMessage(String m) {
