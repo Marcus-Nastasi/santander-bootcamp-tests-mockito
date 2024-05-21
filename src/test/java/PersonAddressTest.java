@@ -21,8 +21,12 @@ public class PersonAddressTest {
     @Test
     void mockingAddressObject() {
         Mockito.when(person.getAddressData().getUf()).thenReturn("SP");
+        Mockito.when(person.getAddressData().getCity()).thenReturn("São Paulo");
         Person person1 = new Person("Josh", "23123123", addressData);
+        assertEquals("Josh", person1.getName());
+        assertEquals("23123123", person1.getCpf());
         assertEquals("SP", person1.getAddressData().getUf());
+        assertEquals("São Paulo", person1.getAddressData().getCity());
     }
 }
 
