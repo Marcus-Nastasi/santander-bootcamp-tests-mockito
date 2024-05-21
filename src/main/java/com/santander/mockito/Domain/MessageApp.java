@@ -20,4 +20,9 @@ public class MessageApp {
     public void removeMessage(String m) {
         this.message.remove(m);
     }
+
+    public List<String> getMessage() {
+        return message;
+    }
 }
+
