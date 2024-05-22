@@ -20,6 +20,12 @@ public class MessageAppTest {
         Mockito.verify(messageApp).addMessage("Hello World");
         Assertions.assertFalse(messageApp.getMessage().isEmpty());
     }
+
+    @Test
+    void verifyMessageAppException() {
+        Mockito.doThrow(IllegalArgumentException.class).when(messageApp).getMessage();
+        Assertions.assertThrows(IllegalArgumentException.class, () -> messageApp.getMessage());
+    }
 }
 
 
